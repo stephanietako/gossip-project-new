@@ -1,0 +1,18 @@
+<h1 class="mb-5">Bienvenue sur The Hacking Gossip</h1>
+<p><a href="<%=new_gossip_path%>">Créer un nouveau gossip</a></p>
+
+ <div class="container">
+     <ul>
+     <% @gossips.each do |gossip| %>
+         <li>
+
+     <%= gossip.title %>
+         </li>
+
+         <p><em>written by <a href="<%= user_path(gossip.user_id) %>"><%= gossip.user.first_name%></a></em></p>
+ </div>
+ <% end %>
+ </ul>
+
+ </div>
+

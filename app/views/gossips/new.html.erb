@@ -1,0 +1,25 @@
+<!-- app/views/posts/new.html.erb -->
+
+<!-- app/views/posts/show.html.erb -->
+
+<html>
+  <body>
+    <!-- ... -->
+    <!-- We're using a url helper to post data to the correct action. -->
+
+    <%= form_tag url_for(action: 'create'), method: "post" do %>
+      <%= label_tag 'title' %>
+      <%= text_area_tag "title" , @gossip.title %>
+      <br /> <br />
+      <%= label_tag 'content' %>
+      <%= text_area_tag "content" , @gossip.content %>
+      <br /> <br />
+
+
+      <%= submit_tag 'Add gossip' %>
+    <% end %>
+    <p><a href="<%=root_path%>">retour à l'accueil</a></p>
+    <!-- ... -->
+  </body>
+</html>
+

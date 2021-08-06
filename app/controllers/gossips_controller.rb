@@ -13,10 +13,12 @@ def new
 end
 
 def create
-  @gossip = Gossip.new(title: params[:title], content: params[:content])
+  @gossip = Gossip.new(gossip_params)
+  
   if @gossip.save
+    redirect_to @gossip
   else
-    redirect_to root_path
+    render :new
   end
 end
   

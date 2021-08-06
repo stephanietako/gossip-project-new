@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
 root to: "gossips#index"
 resources :gossips
-
+get "about", to: "about#index"
+get "sign_up", to: "registrations#new"
+post "sign_up", to: "registration#create"
+root to: "main#index"
 end
 
 

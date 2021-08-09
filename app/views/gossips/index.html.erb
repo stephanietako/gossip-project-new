@@ -3,13 +3,12 @@
 
  <div class="container">
      <ul>
+     <li>
      <% @gossips.each do |gossip| %>
-         <li>
-
-     <%= gossip.title %>
-         </li>
-
-         <p><em>written by <a href="<%= user_path(gossip.user_id) %>"><%= gossip.user.first_name%></a></em></p>
+     <%= gossip.title %>   
+    <%= gossip.content %></li>
+         
+         
  
  <% end %>
  </ul>

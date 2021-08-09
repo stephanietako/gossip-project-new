@@ -16,39 +16,36 @@
   </div>
 <% end %>
 
-# <html>
-#   <body>
-#     <%= form_tag post_comments_path(@post.id) do %>
-#      <%= label_tag 'Comment' %>
-#       <%= text_area_tag 'comment[body]', @comment.body %>
-#       <br /> <br />
+<html>
+<body>
+<%= form_tag comment_path(@post.id) do %>
+<%= label_tag 'Comment' %>
+<%= text_area_tag 'comment[body]', @comment.body %>
+      <br /> <br/>
 
-#       <%= label_tag 'Author' %>
-#       <%= text_field_tag 'comment[author]', @comment.author %>
-#       <br /> <br />
+<%= label_tag 'Author' %>
+<%= text_field_tag 'comment[author]', @comment.author %>
+       <br /> <br />
 
-#     <%= submit_tag 'Add Comment' %>
-#     Ò<% end %>
+<%= submit_tag 'Add Comment' %>
+<% end %>
+</body>
+</html> %>
 
-#     <!-- ... -->
-#   </body>
-# </html>
+ <form action="/gossips" accept-charset="UTF-8" method="post">
+ <input type="hidden" name="authenticity_token" value="...">
 
-# <form action="/gossips" accept-charset="UTF-8" method="post">
-#   <input type="hidden" name="authenticity_token" value="...">
+   <div>
+<label for="gossip_title">Title</label><br>
+<input type="text" name="gossip[title]" id="gossip_title">
+</div>
 
-#   <div>
-#     <label for="gossip_title">Title</label><br>
-#     <input type="text" name="gossip[title]" id="gossip_title">
-#   </div>
-
-#   <div>
-#     <label for="gossip_body">Body</label><br>
-#     <textarea name="gossip[body]" id="gossip_body"></textarea>
-#   </div>
-
-#   <div>
-#     <input type="submit" name="commit" value="Create Gossip" data-disable-with="Create Gossip">
-#   </div>
-# </form>
+<div>
+<label for="gossip_body">Body</label><br>
+<textarea name="gossip[body]" id="gossip_body"></textarea>
+   </div>
+<div>
+<input type="submit" name="commit" value="Create Gossip" data-disable-with="Create Gossip">
+   </div>
+ </form>
 

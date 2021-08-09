@@ -49,7 +49,7 @@ end
 
     private
     def gossip_params
-    params.require(:gossip).permit(:title, :content, :tag, :comment)
+    params.require(:gossip).permit(:title, :content, :body)
   end
 end
 

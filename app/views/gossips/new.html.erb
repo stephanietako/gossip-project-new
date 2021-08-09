@@ -1,11 +1,14 @@
 <section class="container">
-<%= form_with local:true,model:@gossip, method: :post do |form| %>
+<%= form_with url: gossips_path,local:true,model:@gossip, method: :post do |form| %>
 <input type="hidden"name="authenticity_value= <%=form_authenticity_token%>
   <%= form.label :title, "Title:",class:"form-label" %>
   <%= form.text_field :title,class:"form-control"%>
   <%= form.label :content, "Content:",class:"form-label" %>
   <%= form.text_field :content,class:"form-control" %>
+  <%= form.label :body, "Body:",class:"form-label" %>
+  <%= form.text_field :body,class:"form-control"%>
   <%= form.submit "Créer nouveau gossip", class:"btn btn-primary" %>
+  
 <% end %>
 </section>
 

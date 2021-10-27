@@ -1,24 +1,3 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+<h1>The Gossip Project</h1>
+<h2>Introduction</h2>
+<p>Voici l'application : The Hacking Project est une superbe formation, avec une communauté soudée. Qui dit communauté soudée, dit potins à tout-va. Nous allons donc créer une application qui s'appelle The Gossip Project, où l'utilisateur pourra rentrer les ragots et rumeur, afficher une liste des potins, puis supprimer ceux qui ne sont plus d'actualité, etc...</p>
